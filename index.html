@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Facility Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Sports Facility Management</h1>
+  </header>
+  <main>
+    <nav>
+      <ul>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#bookings">Bookings</a></li>
+        <li><a href="#inventory">Inventory</a></li>
+      </ul>
+    </nav>
+    <section id="facilities">
+      <h2>Available Facilities</h2>
+      <ul id="facility-list">
+      <li>Pool</li>
+      <li>Gym</li>
+      <li>Tennis Court</li>
+      <li>Cricket</li>
+    <li>Basket Ball</li>
+    </ul>
+      <button id="add-facility"> Add Facility +</button>
+    </section>
+    <form id="facility-form">  </form>
+    <div id="facility-modal" class="modal"> </div>
+    </section>
+    <section id="bookings">
+      <h2>Manage Bookings</h2>
+      <form id="booking-form">
+        <label for="facility">Facility:</label>
+        <table>
+        <form name="facility" target="_blank">
+        <td>Facility</td>
+                <td><select name="Facilities"> placeholder="Facility">
+                    <option name=".">Facilities </option>
+                    <option name="a">Pool</option>
+                    <option name="b">Gym</option>
+                    <option name="c">Tennis</option>
+                    <option name="d">Cricket</option>
+                    <option name="e">Basketball</option>
+
+                </select></td><br>
+            </table>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time"><br>
+        <button type="submit">Book</button>
+      </form>
+      <table id="booking-table">
+        <thead>
+          <tr>
+            <th>Facility</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </section>
+    <section id="inventory">
+      <h2>Equipment Inventory</h2>
+      <p>**This section is under development**</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
